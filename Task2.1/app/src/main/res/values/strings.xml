@@ -1,0 +1,31 @@
+<resources>
+<string name="app_name">MyUnitConverter</string>
+<string name="welcome">Welcome to Chloe\'s Unit Converter!</string>
+<string name="hint_input">Enter a number</string>
+<string name="convert_button">Convert</string>
+<string name="converted_value">Converted Value: </string>
+<string name="error_empty_input">Please enter a value!</string>
+<string name="error_invalid_input">Invalid input! Please enter another value!</string>
+<string name="error_same_units">Same units! No conversion needed.</string>
+<string name="error_type_input">Unit type mismatch! Please enter another value!</string>
+<string-array name="units">
+    <item>Units Category</item>
+    <item>---- Length ----</item>
+    <item>Inch</item>
+    <item>Foot</item>
+    <item>Yard</item>
+    <item>Mile</item>
+    <item>Centimeter</item>
+    <item>Kilometer</item>
+    <item>---- Weight ----</item>
+    <item>Pound</item>
+    <item>Ounce</item>
+    <item>Ton</item>
+    <item>Kilogram</item>
+    <item>Gram</item>
+    <item>---- Temperature ----</item>
+    <item>Celsius</item>
+    <item>Fahrenheit</item>
+    <item>Kelvin</item>
+</string-array>
+</resources>
