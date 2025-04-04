@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_task_list">
+
+    <!-- Task List page -->
+    <fragment
+        android:id="@+id/navigation_task_list"
+        android:name="com.example.taskmanagerapp.fragments.TaskListFragment"
+        android:label="Tasks"
+        tools:layout="@layout/fragment_task_list">
+
+        <!-- Add a jump to the details page after clicking on a task action -->
+        <action
+            android:id="@+id/action_navigation_task_list_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <!-- Task details page -->
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.example.taskmanagerapp.fragments.TaskDetailFragment"
+        android:label="Task Details"
+        tools:layout="@layout/fragment_task_detail"/>
+
+    <!-- Add Tasks page  -->
+    <fragment
+        android:id="@+id/navigation_add_task"
+        android:name="com.example.taskmanagerapp.fragments.AddEditTaskFragment"
+        android:label="Add Task"
+        tools:layout="@layout/fragment_add_edit_task" />
+
+    <!-- Edit Tasks page  -->
+    <fragment
+        android:id="@+id/addEditTaskFragment"
+        android:name="com.example.taskmanagerapp.fragments.AddEditTaskFragment"
+        android:label="Edit Task"
+        tools:layout="@layout/fragment_add_edit_task" />
+
+    <action
+        android:id="@+id/action_taskDetailFragment_to_addEditTaskFragment"
+        app:destination="@id/addEditTaskFragment" />
+
+
+    <!-- About page -->
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.taskmanagerapp.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+
+</navigation>
