@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- App name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="SIT708 Quiz App"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <!-- Input Name label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name:"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"/>
+
+    <!-- Input field -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:padding="15dp"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="18sp"/>
+
+    <!-- Start button-->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="18sp"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
