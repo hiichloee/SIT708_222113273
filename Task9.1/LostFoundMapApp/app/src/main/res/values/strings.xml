@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LostFoundMapApp</string>
+
+    <string name="btnCreateAdvert">CREATE A NEW ADVERT</string>
+    <string name="btnShowItems">SHOW ALL LOST &amp; FOUND ITEMS</string>
+    <string name="btnShowOnMap">SHOW ON MAP</string>
+    <string name="btnClearAll">--- Clear Records for Test ---</string>
+
+    <string name="addAdvert">Create Advert</string>
+    <string name="radioGroupType">Post Type:</string>
+    <string name="rbLost">Lost</string>
+    <string name="rbFound">Found</string>
+    <string name="etName">Name:</string>
+    <string name="etPhone">Phone:</string>
+    <string name="etDescription">Description:</string>
+    <string name="etDate">Date:</string>
+    <string name="etDateHint">Select Date</string>
+    <string name="etLocation">Location:</string>
+    <string name="etLocationHint">Enter or Pick a place</string>
+    <string name="btnGetLocation">GET CURRENT LOCATION</string>
+    <string name="btnSave">SAVE</string>
+
+
+    <string name="adList">LOST &amp; FOUND ITEMS</string>
+    <string name="tvEmpty">Empty Lost &amp; Found Items Records!</string>
+    <string name="textTitle">Title</string>
+    <string name="textSubtitle">Subtitle</string>
+
+    <string name="tvDetailsTitle">ITEMS DETAIL</string>
+    <string name="btnRemove">REMOVE</string>
+</resources>
