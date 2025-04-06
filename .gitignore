@@ -29,3 +29,5 @@ ehthumbs.db
 .cxx/
 captures/
 .externalNativeBuild/
+
+Task3.1/CalculatorApp/gradle/libs.versions.toml
