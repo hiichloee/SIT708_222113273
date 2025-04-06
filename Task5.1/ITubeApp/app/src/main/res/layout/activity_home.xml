@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <!-- Title -->
+    <TextView
+        android:text="@string/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- YouTube URL row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/etUrl"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp" />
+    </LinearLayout>
+
+    <!-- Play Button -->
+    <Button
+        android:id="@+id/btnPlay"
+        android:text="@string/btnPlay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Add to Playlist -->
+    <Button
+        android:id="@+id/btnAddToPlaylist"
+        android:text="@string/btnAddToPlaylist"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />
+
+    <!-- View Playlist -->
+    <Button
+        android:id="@+id/btnMyPlaylist"
+        android:text="@string/btnMyPlaylist"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp" />
+
+</LinearLayout>

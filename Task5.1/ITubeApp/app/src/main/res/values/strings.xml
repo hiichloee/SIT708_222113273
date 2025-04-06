@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SIT708 iTube App</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnSignup">SIGN UP</string>
+    <string name="btnClearAll">--- Clear Data for Test ---</string>
+
+    <string name="signup_title">iTube Sign up Page</string>
+    <string name="etFullname">Full name:</string>
+    <string name="etUsername">Username:</string>
+    <string name="etPassword">Password:</string>
+    <string name="etConfirmPassword">Confirm password:</string>
+    <string name="btnCreateAccount">CREATE ACCOUNT</string>
+
+    <string name="home_title">iTube Home Page</string>
+    <string name="etUrl">YouTube URL:</string>
+    <string name="btnPlay">PLAY</string>
+    <string name="btnAddToPlaylist">ADD TO PLAYLIST</string>
+    <string name="btnMyPlaylist">MY PLAYLIST</string>
+
+    <string name="playlist_title">YouTube Playlist</string>
+    <string name="playler_title">Video Playing</string>
+</resources>

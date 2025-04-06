@@ -1,0 +1,14 @@
+
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <!-- Page Title -->
+    <string name="top_stories">TOP STORIES</string>
+    <string name="news">NEWS</string>
+    <string name="related_stories">RELATED STORIES</string>
+
+    <!-- Example -->
+    <string name="example_title">test title</string>
+    <string name="example_desc">This is a description for the news item. It may be really long long long long long. This is a description for the news item. It may be really long long long long long.</string>
+
+</resources>
