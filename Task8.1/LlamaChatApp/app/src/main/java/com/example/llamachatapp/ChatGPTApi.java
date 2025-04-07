@@ -6,8 +6,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 public class ChatGPTApi {
-    private static final String API_URL = "https://xiaoai.plus/v1/chat/completions";
-//    private static final String API_URL = "https://api.openai.com/v1/chat/completions";
+    private static final String API_URL = "https://xiaoai.plus/v1/chat/completions";  // 必须由Pixel 5手机来操作
+//    private static final String API_URL = "https://api.openai.com/v1/chat/completions"; 
     private static final String API_KEY = "sk-M0Xvk7Cz2dLZZQGcNYg1tXUtpYT0PEAC8sWA4Qpss9E3Ej6F";
 
     public interface Callback {
