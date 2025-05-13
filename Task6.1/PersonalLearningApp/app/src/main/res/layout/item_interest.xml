@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnInterest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="15dp"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="12dp"
+    android:text="Topic"
+    android:textColor="#000000"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    android:background="@drawable/bg_gradient_button" />
+
+<!--    android:background="@drawable/bg_gradient_button" />-->
+<!--    android:background="@drawable/bg_interest_button_selector" />-->
+<!--    android:layout_marginBottom="10dp"-->
