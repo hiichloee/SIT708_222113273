@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_arrow_back"
+        android:background="@drawable/bg_back_btn"
+        android:padding="8dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:elevation="4dp"/>
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_task_card"
+        android:padding="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:elevation="4dp">
+
+        <!-- Left: User Info -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username@example.com"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Right: Avatar section -->
+        <FrameLayout
+            android:id="@+id/profileContainer"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePhoto"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/default_avatar_test"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                app:strokeColor="#000000"
+                app:strokeWidth="7dp"/>
+
+            <ImageView
+                android:id="@+id/ivEditImage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/ic_add"
+                android:padding="5dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--  Notification  -->
+    <LinearLayout
+        android:id="@+id/tv_notification"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal"
+        android:paddingHorizontal="16dp" android:paddingVertical="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:elevation="4dp"
+        android:background="@drawable/bg_info_box">
+
+        <ImageView
+            android:layout_width="20dp" android:layout_height="20dp"
+            android:src="@drawable/ic_notification" android:layout_marginEnd="8dp" />
+        <TextView android:text="Display any important notifications here"
+            android:textColor="#000000" android:textSize="14sp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Stats -->
+    <!--  First Line  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Total -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="30dp"
+            android:background="@drawable/bg_task_card"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="5dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:text="Total\nQuestions"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_document"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_number"
+                        android:text="10"
+                        android:textColor="#FFF"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+        </LinearLayout>
+
+        <!-- Correct -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="5dp"
+            android:elevation="4dp"
+            android:background="@drawable/bg_task_card">
+
+            <TextView
+                android:text="Correct\nAnswers"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_document"/>
+
+                <TextView
+                    android:id="@+id/tv_correct_number"
+                    android:text="10"
+                    android:textColor="#FFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--  Second Line  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/bg_task_card"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="5dp"
+        android:elevation="4dp">
+
+        <!-- Incorrect -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="30dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:text="Incorrect\nAnswers"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_document"/>
+
+                <TextView
+                    android:id="@+id/tv_incorrect_number"
+                    android:text="10"
+                    android:textColor="#FFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  AI section  -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="40dp"
+            android:layout_marginEnd="10dp">
+
+            <!-- AI Summary Prompt -->
+            <LinearLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal"
+                android:paddingHorizontal="8dp" android:paddingVertical="4dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/bg_blue_round_button">
+                <ImageView
+                    android:layout_width="15dp" android:layout_height="15dp"
+                    android:src="@drawable/ic_sparkler" android:layout_marginEnd="8dp" />
+                <TextView android:text="Summarized by Al"
+                    android:textColor="#000000" android:textSize="12sp" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="query the LLM to get a summary for your incorrect answers"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Share Button -->
+    <LinearLayout
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_green_round_button"
+        android:padding="10dp" android:layout_marginHorizontal="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_share"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upgrade Account"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/bg_green_round_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"/>
+</LinearLayout>
+
+

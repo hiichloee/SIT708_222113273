@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp">
+
+            <!-- Title -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Lets get you"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Setup!"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Avatar Section -->
+        <FrameLayout
+            android:id="@+id/profileContainer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:background="@drawable/circle_background"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                app:strokeColor="#000000"
+                app:strokeWidth="8dp"/>
+
+            <ImageView
+                android:id="@+id/ivAddImage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/ic_add"
+                android:padding="4dp" />
+        </FrameLayout>
+
+
+        <!-- Form Inputs -->
+        <EditText android:id="@+id/etUsername" android:hint="Username"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="12dp" android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText android:id="@+id/etEmail" android:hint="Email"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText android:id="@+id/etConfirmEmail" android:hint="Confirm Email"
+            android:layout_marginTop="12dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText android:id="@+id/etPassword" android:hint="Password"
+            android:inputType="textPassword" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="12dp" android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText android:id="@+id/etConfirmPassword" android:hint="Confirm Password"
+            android:inputType="textPassword" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="12dp" android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText android:id="@+id/etPhone" android:hint="Phone Number"
+            android:inputType="phone" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="12dp" android:background="@android:drawable/editbox_background_normal"/>
+
+        <Button
+            android:id="@+id/btnRegister" android:text="Create new Account"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="#00FF7F" android:textColor="#000" android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

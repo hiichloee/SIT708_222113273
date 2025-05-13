@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvHistory"
+    android:background="@drawable/bg_task_card" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="12dp" android:layout_marginBottom="15dp"
+    android:layout_marginHorizontal="8dp" android:elevation="6dp"
+    android:clickable="true" android:focusable="true">
+
+    <LinearLayout
+        android:paddingStart="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_timestamp" android:text="Timestamp"
+            android:textSize="12sp" android:textColor="#FFFFFF"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+            android:text=" | "
+            android:textSize="12sp" android:textColor="#FFFFFF"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_topic" android:text="Topic"
+            android:textSize="12sp" android:textColor="#FFFFFF"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHistory_Question_Number" android:text="Question"
+        android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" android:paddingStart="10dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tvHistory_Question_Title"
+        android:text="You can use any question hereand setup a couple of answers."
+        android:textColor="#FFFFFF" android:textSize="16sp"
+        android:paddingHorizontal="10dp" android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+    <RadioGroup android:id="@+id/History_radioGroupOptions"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:text="Answer 1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:paddingStart="10dp" tools:ignore="RtlSymmetry"
+            android:textSize="14sp" android:textColor="#FFFFFF" />
+        <RadioButton android:text="Answer 2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:paddingStart="10dp" tools:ignore="RtlSymmetry"
+            android:textSize="14sp" android:textColor="#FFFFFF"/>
+        <RadioButton android:text="Answer 3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:paddingStart="10dp" tools:ignore="RtlSymmetry"
+            android:textSize="14sp" android:textColor="#FFFFFF"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/btnExpand"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_arrow_down"
+        android:background="@drawable/bg_green_round_button"
+        android:padding="2dp"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PersonalLearningApp</string>
+
+    <!-- Login -->
+    <string name="login_welcome_Part1">Welcome,</string>
+    <string name="login_welcome_Part2">Student!</string>
+    <string name="login_subtitle">Lets Start Learning!</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_register_prompt">Need an Account?</string>
+
+    <!-- Register -->
+    <string name="register_title">Lets get you Setup!</string>
+    <string name="register_email">Email</string>
+    <string name="register_confirm_email">Confirm Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_confirm_password">Confirm Password</string>
+    <string name="register_phone">Phone Number</string>
+    <string name="register_button">Create new Account</string>
+
+    <!-- Interests -->
+    <string name="interests_title">Your Interests</string>
+    <string name="interests_subtitle">You may select up to 10 topics</string>
+    <string name="interests_next">Next</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Hello, Your Name</string>
+    <string name="dashboard_task_info">You have 1 task due</string>
+    <string name="dashboard_task_card">Generated Task 1\nSmall Description for the generated Task</string>
+
+    <!-- Task -->
+    <string name="task_submit">Submit</string>
+
+    <!-- Result -->
+    <string name="result_title">Your Results</string>
+    <string name="result_continue">Continue</string>
+</resources>
