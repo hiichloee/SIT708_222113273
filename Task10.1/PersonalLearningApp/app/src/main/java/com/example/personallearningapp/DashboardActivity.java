@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
     private ImageView relatedImage;
     private DatabaseHelper dbHelper;
     private int userId;
-    private String username, email, avatarPath;
+    private String username, email, avatarPath; 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
